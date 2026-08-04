@@ -1,0 +1,29 @@
+.ps-menu {
+    position: relative;
+    display: inline-block;
+}
+
+.ps-popup {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 180px;
+    background: #1f1f1f;
+    border: 1px solid #444;
+    border-radius: 8px;
+    box-shadow: 0 8px 20px rgba(0,0,0,.4);
+    overflow: hidden;
+    z-index: 1000;
+}
+
+.ps-popup a {
+    display: block;
+    padding: 10px 14px;
+    color: white;
+    text-decoration: none;
+}
+
+.ps-popup a:hover {
+    background: #333;
+}/* CSS Document */
+
