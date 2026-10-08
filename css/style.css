@@ -27,7 +27,7 @@ footer {
 	margin-top: auto;
 }
 
-img {
+.info-square img {
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
@@ -47,6 +47,11 @@ details > summary {
 
 #platforms > div {
 	display: none;
+}
+
+#platforms a {
+	color: inherit;
+	text-decoration: none;
 }
 
 #pageContent {
