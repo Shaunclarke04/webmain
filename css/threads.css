@@ -1,0 +1,11 @@
+  body {
+   	background-color: #222;
+    font-family: 'Roboto', sans-serif;
+	font-size: 150%;
+  	color: #eee;
+	margin-left: 5%
+  }
+  
+ a {
+	color: #eee;
+ }

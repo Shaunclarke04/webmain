@@ -1,3 +1,5 @@
+// Accordian Handler
+
 const details = document.querySelectorAll("details");
 
 details.forEach((targetDetail) => {
