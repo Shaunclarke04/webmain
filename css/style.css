@@ -104,3 +104,63 @@ details > summary {
 .brand-stroke a:hover {
 	filter: brightness(1.5);
 }
+
+/* Mobile layout */
+@media (max-width: 600px) {
+	h1 {
+		font-size: 1.25em;
+	}
+
+	#pageContent {
+		margin-inline: 15px;
+	}
+
+	.pictochat-window {
+		width: 100%;
+		max-width: 100%;
+		margin-inline: auto;
+	}
+
+	.pictochat-message,
+	.pictochat-status {
+		width: 100%;
+		min-width: 0;
+		overflow-wrap: anywhere;
+	}
+
+	.info {
+		width: 100%;
+		padding-left: 4px;
+	}
+
+	.info-square {
+		width: 72px;
+		height: 72px;
+		flex: 0 0 72px;
+	}
+
+	.info-container {
+		width: auto;
+		min-width: 0;
+		flex: 1;
+	}
+
+	.info-label {
+		height: auto;
+		min-height: 26px;
+		white-space: normal;
+		overflow-wrap: anywhere;
+	}
+
+	.info-text {
+		overflow-wrap: anywhere;
+	}
+
+	.button-grid {
+		grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+	}
+
+	.radio-button {
+		width: 100%;
+	}
+}
