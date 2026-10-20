@@ -70,7 +70,7 @@ details > summary {
 }
 
 .pictochat-window {
-	width: fit-content;
+	width: min(100%, 560px);
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 15px;
@@ -103,4 +103,108 @@ details > summary {
 }
 .brand-stroke a:hover {
 	filter: brightness(1.5);
+}
+
+/* Keep each radio control and its label aligned within the selector grid. */
+.radio-button {
+	width: 100%;
+	height: 62px;
+}
+
+.radio-button > input[type="radio"] {
+	position: absolute;
+	inset: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.radio-button > label {
+	left: 0;
+	box-sizing: border-box;
+	justify-content: center;
+	pointer-events: none;
+}
+
+/* Keep each window's content aligned to its inner edges. */
+.pictochat-window > .info,
+.pictochat-window > .pictochat-message,
+.pictochat-window > .pictochat-status,
+.pictochat-window > fieldset.button-grid {
+	width: calc(100% - 8px);
+}
+
+.info-container {
+	width: auto;
+	min-width: 0;
+	flex: 1;
+}
+
+.info-label {
+	height: auto;
+	white-space: normal;
+	overflow-wrap: anywhere;
+}
+
+.info-text {
+	overflow-wrap: anywhere;
+}
+
+/* Mobile layout */
+@media (max-width: 600px) {
+	h1 {
+		font-size: 1.25em;
+	}
+
+	#pageContent {
+		margin-inline: 15px;
+	}
+
+	.pictochat-window {
+		width: 100%;
+		max-width: 100%;
+		margin-inline: auto;
+	}
+
+	.pictochat-message,
+	.pictochat-status {
+		width: 100%;
+		min-width: 0;
+		overflow-wrap: anywhere;
+	}
+
+	.info {
+		width: 100%;
+		padding-left: 4px;
+	}
+
+	.info-square {
+		width: 72px;
+		height: 72px;
+		flex: 0 0 72px;
+	}
+
+	.info-container {
+		width: auto;
+		min-width: 0;
+		flex: 1;
+	}
+
+	.info-label {
+		height: auto;
+		min-height: 26px;
+		white-space: normal;
+		overflow-wrap: anywhere;
+	}
+
+	.info-text {
+		overflow-wrap: anywhere;
+	}
+
+	.button-grid {
+		grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+	}
+
+	.radio-button {
+		width: 100%;
+	}
 }
