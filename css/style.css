@@ -105,6 +105,30 @@ details > summary {
 	filter: brightness(1.5);
 }
 
+/* Keep each window's content aligned to its inner edges. */
+.pictochat-window > .info,
+.pictochat-window > .pictochat-message,
+.pictochat-window > .pictochat-status,
+.pictochat-window > fieldset.button-grid {
+	width: calc(100% - 8px);
+}
+
+.info-container {
+	width: auto;
+	min-width: 0;
+	flex: 1;
+}
+
+.info-label {
+	height: auto;
+	white-space: normal;
+	overflow-wrap: anywhere;
+}
+
+.info-text {
+	overflow-wrap: anywhere;
+}
+
 /* Mobile layout */
 @media (max-width: 600px) {
 	h1 {
